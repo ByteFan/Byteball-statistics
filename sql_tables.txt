@@ -1,0 +1,48 @@
+CREATE TABLE `bb_stats` (
+  `id` smallint(11) NOT NULL AUTO_INCREMENT,
+  `witness_diversity_index` varchar(10) DEFAULT NULL,
+  `dollar_rate` float(10,0) DEFAULT NULL,
+  `total_active_witnesses` mediumint(9) DEFAULT NULL,
+  `multisigned_units` int(11) DEFAULT NULL,
+  `smart_contract_units` int(11) DEFAULT NULL,
+  `total_units` int(11) DEFAULT NULL,
+  `total_stables_units` int(11) DEFAULT NULL,
+  `total_stables_units_sidechain` int(11) DEFAULT NULL,
+  `total_units_witnesses_excluded` int(11) DEFAULT NULL,
+  `total_sidechain_units_WE` int(11) DEFAULT NULL,
+  `stable_ratio` float DEFAULT NULL,
+  `total_payload` int(11) DEFAULT NULL,
+  `total_add_with_balance` int(11) DEFAULT NULL,
+  `total_full_wallets` int(11) DEFAULT NULL,
+  `total_hubs` int(11) DEFAULT NULL,
+  `registered_users` int(11) DEFAULT '0',
+  `non_US` int(11) DEFAULT '0',
+  `accredited_investors` int(11) DEFAULT NULL,
+  `UTC_datetime` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `seen_witnesses` (
+  `address` varchar(40) NOT NULL,
+  `first_seen` date DEFAULT NULL,
+  PRIMARY KEY (`address`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `richests_list` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `address` varchar(32) NOT NULL,
+  `amount` bigint(20) NOT NULL,
+  PRIMARY KEY (`address`),
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `buff_richests_list` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `amount` bigint(20) NOT NULL,
+  `address` varchar(32) NOT NULL,
+  PRIMARY KEY (`address`),
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
