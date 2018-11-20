@@ -18,7 +18,7 @@ Top 100 richests:
 
 
 Witnesses monitoring:
-![Witnesses monitoring](../../../screenshots/blob/master/wm.png?raw=true "Witnesses monitoring")
+![Witnesses monitoring](../../../screenshots/blob/master/bbwm.png?raw=true "Witnesses monitoring")
 
 
 Byteball heartbeat:
