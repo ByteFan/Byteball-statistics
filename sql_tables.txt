@@ -46,3 +46,16 @@ CREATE TABLE `buff_richests_list` (
   PRIMARY KEY (`address`),
   KEY `id` (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `daily_stats` (
+  `day` date NOT NULL,
+  `units_w` int(10) unsigned NOT NULL,
+  `units_nw` int(10) unsigned NOT NULL,
+  `payload_nw` int(10) unsigned NOT NULL,
+  `payload_w` int(10) unsigned NOT NULL,
+  `sidechain_units` int(10) unsigned NOT NULL,
+  `addresses` int(10) unsigned NOT NULL,
+  `new_addresses` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`day`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
