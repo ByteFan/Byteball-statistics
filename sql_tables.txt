@@ -61,3 +61,10 @@ CREATE TABLE `daily_stats` (
   `new_addresses` int(10) unsigned NOT NULL,
   PRIMARY KEY (`day`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `mci_timestamp` (
+  `main_chain_index` int(10) unsigned NOT NULL,
+  `date` datetime NOT NULL,
+  PRIMARY KEY (`main_chain_index`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
