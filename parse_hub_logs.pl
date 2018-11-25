@@ -1,9 +1,9 @@
 #!/usr/bin/perl
   use strict;
-	use warnings;
-	use DBI;
+  use warnings;
+  use DBI;
   use Date::Parse;
-	use Data::Dumper;
+  use Data::Dumper;
   
   #A quick and dirty script to grep connnected waller number from hub logs and store 
   #the history in table hub_stats.
