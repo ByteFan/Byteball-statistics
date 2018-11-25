@@ -68,3 +68,10 @@ CREATE TABLE `mci_timestamp` (
   `date` datetime NOT NULL,
   PRIMARY KEY (`main_chain_index`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+  CREATE TABLE `hub_stats` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `UTC_datetime` timestamp NULL DEFAULT NULL,
+  `connected_wallets` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
